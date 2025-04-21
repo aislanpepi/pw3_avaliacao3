@@ -12,10 +12,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Mechanic {
     private String nameMechanic;
-    private int expYears;
+    private String expYears;
 
     public Mechanic(MechanicDTO dto){
         this.nameMechanic = dto.nameMechanic();
         this.expYears = dto.expYears();
+    }
+
+    public void updateInfo(MechanicDTO dto){
+        if(dto.nameMechanic() != null) nameMechanic = dto.nameMechanic();
+        if(dto.expYears() != null) expYears = dto.expYears();
     }
 }

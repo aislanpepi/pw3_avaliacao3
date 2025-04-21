@@ -7,6 +7,6 @@ public record MechanicDTO(
         @NotBlank
         String nameMechanic,
 
-        int expYears
+        String expYears
 ) {
 }
