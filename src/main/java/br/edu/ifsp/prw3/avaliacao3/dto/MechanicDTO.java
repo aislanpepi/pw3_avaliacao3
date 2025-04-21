@@ -1,4 +1,12 @@
 package br.edu.ifsp.prw3.avaliacao3.dto;
 
-public record MechanicDTO(String nameMechanic, int expYears) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record MechanicDTO(
+        @NotBlank
+        String nameMechanic,
+
+        int expYears
+) {
 }

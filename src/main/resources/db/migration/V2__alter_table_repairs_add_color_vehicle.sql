@@ -1,0 +1,1 @@
+alter table repair add color_vehicle varchar(64);
