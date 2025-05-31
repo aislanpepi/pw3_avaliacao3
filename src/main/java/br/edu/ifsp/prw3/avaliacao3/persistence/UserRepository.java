@@ -1,0 +1,7 @@
+package br.edu.ifsp.prw3.avaliacao3.persistence;
+
+import br.edu.ifsp.prw3.avaliacao3.user.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User,Long> {
+}
