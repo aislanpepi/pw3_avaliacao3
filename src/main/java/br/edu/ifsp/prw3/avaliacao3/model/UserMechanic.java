@@ -12,13 +12,13 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-@Entity(name = "User")
-@Table(name = "Users")
+@Entity(name = "UserMechanic")
+@Table(name = "mechanic_users")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class User implements UserDetails {
+public class UserMechanic implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,1 +1,1 @@
-INSERT INTO Users (login,password) VALUES ('aislan','$2a$12$EhTogu2jjvi08QYcgV2JA.3kvBJRjJty2SkwZS0zMpAMspZHc386S');
+INSERT INTO mechanic_users (login,pwd) VALUES ('aislan','$2a$12$EhTogu2jjvi08QYcgV2JA.3kvBJRjJty2SkwZS0zMpAMspZHc386S');
