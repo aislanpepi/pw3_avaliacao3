@@ -98,6 +98,7 @@
 					<url>jdbc:h2:file:./data/av3pw3</url>
 					<user>sa</user>
 					<password></password>
+					<cleanDisabled>false</cleanDisabled>
 				</configuration>
 			</plugin>
 		</plugins>

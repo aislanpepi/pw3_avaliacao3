@@ -1,0 +1,1 @@
+INSERT INTO  MECHANIC_USERS (login,password) VALUES('aislan','$2a$12$fKtZlP4waAVgdN8FcpgbKeUOC.9uq0yCeBkPOLMkKSE8ND60.RfLS');

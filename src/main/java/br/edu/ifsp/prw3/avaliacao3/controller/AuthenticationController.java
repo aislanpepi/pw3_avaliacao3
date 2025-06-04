@@ -1,6 +1,7 @@
 package br.edu.ifsp.prw3.avaliacao3.controller;
 
 import br.edu.ifsp.prw3.avaliacao3.dto.AuthenticationDTO;
+import br.edu.ifsp.prw3.avaliacao3.dto.JWTTokenDTO;
 import br.edu.ifsp.prw3.avaliacao3.model.UserMechanic;
 import br.edu.ifsp.prw3.avaliacao3.util.security.TokenService;
 import jakarta.validation.Valid;
@@ -29,6 +30,8 @@ public class AuthenticationController {
         var token = new UsernamePasswordAuthenticationToken(data.login(),data.password());
         var authentication = manager.authenticate(token);
 
-        return ResponseEntity.ok(tokenService.generateToken((UserMechanic) authentication.getPrincipal()));
+        var tokenJWT = tokenService.generateToken((UserMechanic) authentication.getPrincipal());
+
+        return ResponseEntity.ok(new JWTTokenDTO(tokenJWT));
     }
 }
